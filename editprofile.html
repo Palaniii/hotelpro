@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styleforEditprofile.css">
+</head>
+<body>
+  <div class="row rone">
+    <div class="col-md-8">
+          <i class="logoimg">
+            <img src="logoo.png"   height="50" width="100" alt="">
+          </i>
+          <!-- <h3 style="color: #87ceeb;">Easy<span style="color: white;">book</span> </h3> -->
+          
+    </div>
+
+
+
+    <div class="col-6  btsign col-md-2">
+     
+      <h5 class="signin">
+        <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+
+        sign In</h5>
+
+
+    </div>
+
+ 
+    <div class="col-6 addhotel col-md-2" id="addhotel">
+      
+    <h4 class="textadd">Add Your Hotel + </h4>
+    </div>
+
+
+  </div>
+  <div class="row rtwo">
+    <div class="col-6 col-md-4 setnvbar c">
+      <nav class="navbar navbar-expand-lg text-white " >
+        <div class="container-fluid">
+         
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse text-white" id="navbarNav">
+            <ul class="navbar-nav text-white">
+              
+              
+              
+              <div class="btn-group">
+                <button type="button" class="btn  dropdown-toggle text-white" data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
+                  <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                 Home
+                </button>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item " href="#">Action</a></li>
+                  <li><a class="dropdown-item " href="#">Another action</a></li>
+
+                  <li><a class="dropdown-item " href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn  dropdown-toggle text-white" data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
+                 Listing
+                </button>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item " href="#">Action</a></li>
+                  <li><a class="dropdown-item " href="#">Another action</a></li>
+                  <li><a class="dropdown-item " href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+             
+              <div class="btn-group">
+                <button type="button" class="btn  dropdown-toggle text-white" data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false">
+                 Pages
+                </button>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item " href="#">Action</a></li>
+                  <li><a class="dropdown-item " href="#">Another action</a></li>
+                  <li><a class="dropdown-item " href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+
+    </div>
+    <div class="col-6 col-md-2">
+     
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <!-- Avatar -->
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link dropdown-toggle d-flex align-items-center text-white setmenu"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                aria-expanded="false"
+              >
+                <img
+                  src="girl1.jfif"
+                  class="rounded-circle"
+                  height="22"
+                  alt="Portrait of a Woman"
+                  loading="lazy"
+                /><h6 class="text-white setname">My Account</h6>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="editprofile.html">Edit Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="listing.html">Add Listing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="booking.html">Booking</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="review.html">Reviews</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>    </div>
+    <div class="col-6 col-md-2 setheart">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <!-- Badge -->
+            <li class="nav-item ">
+              <a class="nav-link" href="#">
+                <span class="badge badge-pill  " style="font-size: 9px; position: relative; top: -12px; left: 6px;">1</span>
+                <span> <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-6 col-md-4">
+      
+      <div class=" setsearch" onclick="toggleSearchBar()">
+        search
+        <i class="fa-sharp fa-solid fa-magnifying-glass fa-3xs" style="color: #5ccae6;"></i>
+         </div>
+        
+      </div>
+      
+   
+  <div class="booking-search-bar"  id="bookingSearchBar">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="search-field">
+          <label for="destination">
+            <i class="fa-solid fa-magnifying-glass-location" style="color: #ff0505;"></i>
+            HotelName</label>
+          <input type="text" id="destination" placeholder="Destination or Hotel Name" />
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="search-field">
+          <label for="date">
+            <i class="fa-solid fa-calendar-days" style="color: #ff0000;"></i>
+            Date In-Out</label>
+          <input type="text" id="date" placeholder="Date In-Out" />
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="search-field">
+          <label for="rooms">
+            <i class="fa-solid fa-hotel" style="color: #ff0000;"></i>
+            Rooms</label>
+          <input type="number" id="rooms" value="1" min="1" />
+      </div>
+      </div>
+    </div>
+    <div class="row secdrow">
+      <div class="col-md-4">
+        <div class="search-field">
+          <label for="adults">
+            <i class="fa-solid fa-people-group" style="color: #ff0000;"></i>
+            Adults</label>
+          <input type="number" id="adults" value="1" min="1" />
+        </div>
+      
+     
+    </div>
+      <div class="col-md-4">
+        <div class="search-field">
+          <label for="children">
+            <i class="fa-solid fa-children" style="color: #ff0000;"></i>
+            Children</label>
+          <input type="number" id="children" value="0" min="0" />
+      </div>
+  
+      
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" class="search-button">
+              <i class="fas fa-search"></i> Search
+          </button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="cancel-button">
+               Cancel
+          </button>
+          </div>
+        </div>
+
+   
+      
+      </div>
+    </div>
+</div>
+  </div>
+  <!-- card for User -->
+
+  <div class="row">
+    <div class="themehtl">
+        <img src="hotel-theme.avif" class="img-fluid themeimghotel" alt="Wild Landscape" />
+    </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+            <img src="girl1.jfif" width="100%" class="img-fluid"/>
+            
+          </div>
+    
+          <div class="card-body">
+            <h5 class="card-text">Welcome</h5>
+            <h3 class="card-text">Adhiti </h3>
+           
+            <a href="#!" class="btnadd" data-mdb-ripple-init>Add Hotel</a>
+    
+            <div class="row">
+              <div class="col-md-4 detail">
+                <p class="dtil">Listing</p>
+                <p class="setnum">5</p>
+              </div>
+              <div class="col-md-4 detail">
+                <p class="dtil" >Booking</p>
+                <p class="setnum">5</p>
+              </div>
+              <div class="col-md-4 detail">
+                <p class="dtil">Reviews</p>
+                <p class="setnum">5</p>
+              </div>
+            </div>
+            <div class="log text-center">
+                <h5 class="logout text-center">LOGOUT
+                  <i class="fa-sharp fa-solid fa-arrow-right-to-bracket text-center"></i>
+    
+                </h5>  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+     
+      <div class="col-md-8">
+        <!-- sidenavbar -->
+        <nav class="navbar navbar-expand-lg  editnav " >
+          <div class="container-fluid">
+           
+            <button
+              data-mdb-collapse-init
+              class="navbar-toggler"
+              type="button"
+              data-mdb-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav text-white">
+                
+                
+                
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle"  data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false" >
+                    <i class="fa-regular fa-user"></i>
+                    Profile
+                  </button>
+                  <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item " href="editprofile.html">Edit Profile</a></li>
+                    <li><a class="dropdown-item " href="changepassword.html">Change Password</a></li>
+    
+                    
+                  </ul>
+                </div>
+    
+                <div class="btn-group">
+                  <a href="">
+                    <button type="button"  class="btn ">
+                      <i class="fa-regular fa-message"></i>
+                   Message
+                    </button>
+                  </a>
+                  
+                 
+                </div>
+                <div class="btn-group">
+    <a href="listing.html" ><button type="button"   class="btn ">
+      <i class="fa-sharp fa-solid fa-list"></i>
+     My Listing
+    </button></a>
+                  
+                 
+                </div>
+                <div class="btn-group">
+                  <a href="booking.html">
+                    <button type="button"  class="btn ">
+                    <i class="fa-regular fa-calendar-days"></i>
+    
+                    Booking
+                  </button>
+                </a>
+                  
+                 
+                </div>
+                <div class="btn-group">
+                  <a href="review.html">
+                    <button type="button" class="btn " >
+                      <i class="fa-sharp fa-solid fa-message"></i>
+                  Reviews
+                    </button>
+                  </a>
+                 
+                 
+                </div>
+              
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="form"> 
+          <h3 class="headtags" style="color: navy;">Your Profile</h3>
+          <hr>
+  <div class="row frrow">
+    <div class="col-md-12">
+    <div class="form-outline" data-mdb-input-init>
+      <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+      <label class="form-label" for="formControlLg">Email</label>
+    </div>
+  </div>
+  </div>
+  <div class="row frrow">
+    <div class="col-md-12">
+      <div class="form-outline" data-mdb-input-init>
+        <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+        <label class="form-label" for="formControlLg">Email</label>
+      </div>
+    </div>
+    </div>
+    <div class="row frrow" >
+      <div class="col-md-12">
+        <div class="form-outline" data-mdb-input-init>
+          <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+          <label class="form-label" for="formControlLg">Email</label>
+        </div>
+      </div>
+      </div>
+      <div class="row frrow">
+        <div class="col-md-12">
+          <div class="form-outline" data-mdb-input-init>
+            <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+            <label class="form-label" for="formControlLg">Email</label>
+          </div>
+        </div>
+        </div>
+        <div class="row frrow">
+          <div class="col-md-12">
+            <div class="form-outline" data-mdb-input-init>
+              <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+              <label class="form-label" for="formControlLg">Email</label>
+            </div>
+          </div>
+          </div>
+  
+  
+          <!-- textarea -->
+  
+          <div class="row frrow">
+            <div class="col-md-8 ">
+              <div class="form-outline" data-mdb-input-init>
+                <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                <label class="form-label" for="textAreaExample">Message</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              
+  <label class="custum-file-upload" for="file">
+  <div class="icon">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="" d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H7C7.55228 23 8 22.5523 8 22C8 21.4477 7.55228 21 7 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM14 15.5C14 14.1193 15.1193 13 16.5 13C17.8807 13 19 14.1193 19 15.5V16V17H20C21.1046 17 22 17.8954 22 19C22 20.1046 21.1046 21 20 21H13C11.8954 21 11 20.1046 11 19C11 17.8954 11.8954 17 13 17H14V16V15.5ZM16.5 11C14.142 11 12.2076 12.8136 12.0156 15.122C10.2825 15.5606 9 17.1305 9 19C9 21.2091 10.7909 23 13 23H20C22.2091 23 24 21.2091 24 19C24 17.1305 22.7175 15.5606 20.9844 15.122C20.7924 12.8136 18.858 11 16.5 11Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
+  </div>
+  <div class="text">
+     <span>Click to upload image</span>
+     </div>
+     <input type="file" id="file">
+  </label>
+  
+            </div>
+          </div>
+  
+  
+  
+  
+  
+             
+        <!-- Your Tariff Plan -->
+        <h3 class="headtags" style="color: navy;"> Your Tariff Plan</h3>
+          <hr>
+  
+        <div class="row frrow">
+          <div class="col-md-4">
+            <div class="form-outline" data-mdb-input-init>
+              <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+              <label class="form-label" for="formControlLg">Email</label>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="form-outline" data-mdb-input-init>
+              <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+              <label class="form-label" for="formControlLg">Email</label>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="form-outline" data-mdb-input-init>
+              <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+              <label class="form-label" for="formControlLg">Email</label>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+  
+  
+  
+  <!-- 3 row -->
+  <h3  class="headtags" style="color: navy;"> Your Social</h3>
+  <hr>
+  <div class="row frrow">
+    <div class="col-md-12">
+      <div class="form-outline" data-mdb-input-init>
+        <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+        <label class="form-label" for="formControlLg">Email</label>
+      </div>
+    </div>
+    </div>
+    <div class="row frrow">
+      <div class="col-md-12">
+        <div class="form-outline" data-mdb-input-init>
+          <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+          <label class="form-label" for="formControlLg">Email</label>
+        </div>
+      </div>
+      </div>
+      <div class="row frrow">
+        <div class="col-md-12">
+          <div class="form-outline" data-mdb-input-init>
+            <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+            <label class="form-label" for="formControlLg">Email</label>
+          </div>
+        </div>
+        </div>
+        <div class="row frrow">
+          <div class="col-md-12">
+            <div class="form-outline" data-mdb-input-init>
+              <input type="email" id="formControlLg" class="form-control form-control-lg" required />
+              <label class="form-label" for="formControlLg">Email</label>
+            </div>
+          </div>
+          </div>
+  
+          <button class="savebtn">Save Changes 
+            <i class="fa-sharp fa-regular fa-floppy-disk"></i>
+          </button>
+ </div>
+        
+      </div>
+    
+          </div>  
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+
+
+
+ <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"
+></script>   
+</body>
+</html>

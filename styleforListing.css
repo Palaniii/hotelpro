@@ -1,0 +1,449 @@
+body{
+    overflow-x: hidden;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+/* themeimg for hotel in top */
+.themeimghotel{
+    width: 100%;
+    height:300px;
+    position: relative;
+}
+
+/* card for User */
+
+.card {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    background-color: navy;
+    color: white;
+    position: absolute;
+    top: 220px;
+   left:30px;
+   
+  }
+  
+  
+  
+  .card-body {
+    text-align: center;
+    padding: 10px;
+    color: white;
+  }
+  
+  .btnadd {
+    margin: 10px auto;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnadd:hover {
+    background-color: #0056b3;
+  }
+  
+  .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dtil {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .setnum {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .logout {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0855e4;
+  }
+  /* navbar for center */
+  .editnav{
+    background-image: url('hotel-theme.avif');
+    position: relative;
+    top: -53px;
+    right:10px;
+    
+  }
+
+
+  .outline{
+    height: 950px;
+    width: 800px;
+    border: 0.2px solid rgba(0, 0, 0, 0.062);
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    position: relative;
+    right: 36px;
+    top: -70px;
+}
+.headpart{
+    height: 7%;
+    width: 100%;
+    background-color: rgb(86, 202, 248);
+}
+.headtext{
+    color: #ffffff;
+    font-size: 23px;
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+
+.setimg{
+    margin: 30px;
+    
+}
+.content{
+    margin: 30px;
+    position: relative;
+    left: 300px;
+    top: -180px;
+}
+.t1{
+    color: rgb(103, 208, 250);
+}
+.t1:hover{
+    color: rgb(250, 165, 7);
+}
+.t2{
+    font-size:11px;
+    color: rgba(0, 0, 0, 0.479);
+}
+.hrz{
+    position: relative;
+    
+    top: -120px;
+
+}
+.edbtn{
+    height: 35px;
+    width: 90px;
+    background-color: rgb(101, 209, 173);
+    border-radius: 5px;
+    border: 0.2px solid rgba(0, 0, 0, 0.082);
+}
+.delbtn{
+    height: 35px;
+    width: 90px;
+    background-color: rgb(248, 211, 87);
+    border-radius: 5px;
+    border: 0.2px solid rgba(0, 0, 0, 0.082); 
+    margin-left: 5px;
+}
+.delbtn:hover{
+    background-color: rgb(223, 31, 31);
+}
+.setpart2{
+    position: relative;
+    top: -120px;
+}
+.hrz2{
+    position: relative;
+    top:-240px; 
+}
+
+.setpart3{
+    position: relative;
+    top: -240px;
+}
+.hrz3{
+    position: relative;
+    top:-360px; 
+}
+.setpart4{
+    position: relative;
+    top: -360px;
+}
+.hrz4{
+    position: relative;
+    top:-480px; 
+}
+/* Hide the booking-search-bar by default */
+.booking-search-bar {
+  display: none; /* Hidden by default */
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  background-image: url('searchfilterbgimg.jpg');
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox layout for inline labels and inputs */
+.search-field {
+  display: inline;
+  
+}
+
+/* Style labels with specific width */
+.search-field label {
+  width: 150px; /* Adjust the width as needed */
+  font-weight: bold;
+  color: #333;
+  margin-right: 40px;
+ 
+}
+
+/* Style inputs with specific width and height */
+.search-field input[type="text"],
+.search-field input[type="number"] {
+  flex: 1;
+  padding: 8px;
+  height: 35px; 
+  width: 100%;
+  max-width: 200px; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Style the search button */
+.search-button {
+  padding: 6px 60px;
+  font-size: 14px;
+  background-color: #40a9ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+.cancel-button{
+  padding: 6px 63px;
+  font-size: 14px;
+  background-color: #40a9ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.secdrow{
+  margin-top: 10px;
+}
+
+.search-button i {
+  margin-right: 5px;
+}
+
+  /* Media Queries */
+
+  @media screen and (max-width:425px) {
+
+    body{
+      overflow-x: hidden;
+    }
+    .search-field input[type="text"],
+   .search-field input[type="number"]{
+    margin-top: 20px;
+   }
+   .cancel-button{
+    margin-top: 10px;
+    padding: 6px 73px;
+   
+   }
+    .themeimghotel{
+         
+        position: relative;
+    }
+    .editnav{
+      position: relative;
+     left:70%;
+     }
+    .card {
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        max-width:70%;
+        position: relative;
+        top:-180px;
+        left: -5px;
+    }
+    .outline{
+      width:380px;
+      height: 800px;
+      position: relative;
+      top:-50px;
+      left: -10px;
+  }
+  .hotelimg{
+      height: 50px;
+      width: 100px;
+  }
+  .hrz{
+      position: relative;
+      top:-70px;  
+  }
+  .content{
+      position: relative;
+      top: -80px;
+      left: 120px;
+  }
+  .setpart2{
+      position: relative;
+      top: -80px;
+  }
+  .setpart3{
+      position: relative;
+      top: -150px;
+  }
+  .setpart4{
+      position: relative;
+      top: -200px;
+  }
+  .hrz2{
+      position: relative;
+      top: -155px;
+  }
+  .hrz3{
+      position: relative;
+      top: -200px;
+  }
+ 
+  
+  }
+
+
+  @media screen and (max-width: 768px) {
+    body{
+      overflow-x: hidden;
+    }
+    .form{
+      overflow-x: hidden;
+    }
+    .card {
+      width: 95%;
+    margin-top: 70px;
+    }
+    .search-button {
+      padding: 6px 40px;
+      
+     
+    }
+    .cancel-button{
+      padding: 16px 40px;
+      overflow: hidden;
+      
+    }
+    .booking-search-bar{
+overflow: hidden;   
+ }
+    .btnadd {
+      width: 100%;
+      padding: 12px;
+    }
+    .editnav{
+       
+        position: relative;
+        top:-45px;
+        left:10px;
+        width: 97%;
+        
+      }
+      .outline{
+        width: 420px;
+        height: 750px;
+        position: relative;
+        top: -35px;
+        overflow-x: hidden;
+        left: -10px;
+    }
+    .hotelimg{
+        height: 70px;
+        width: 120px;
+    }
+    .hrz{
+        position: relative;
+        top:-70px;  
+    }
+    .content{
+        position: relative;
+        top: -100px;
+        left: 190px;
+    }
+    .setpart2{
+        position: relative;
+        top: -80px;
+    }
+    .setpart3{
+        position: relative;
+        top: -150px;
+    }
+    .setpart4{
+        position: relative;
+        top: -200px;
+    }
+    .hrz2{
+        position: relative;
+        top: -155px;
+    }
+    .hrz3{
+        position: relative;
+        top: -200px;
+    }
+    .detail {
+      flex: 1;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body{
+      overflow-x: hidden;
+    }
+    .outline{
+      overflow-x: hidden;
+      width: 100%;
+      margin-left: 40px;
+    }
+    .card {
+      width: 80%;
+      margin-top: 75px;
+    }
+    .search-button {
+      padding: 6px 40px;
+      margin-top: 30px;
+      
+     
+    }
+    .cancel-button{
+      padding: 6px 40px;
+      overflow: hidden;
+      margin-top: 30px;
+
+      
+    }
+    .booking-search-bar{
+overflow: hidden;   
+ }
+  
+    .btnadd {
+      width: 70%;
+    }
+  
+    .img-fluid {
+      height: 300px;
+    }
+  }
